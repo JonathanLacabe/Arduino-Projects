@@ -1,0 +1,1 @@
+These are programs in which a breadboard configuration of LEDs is used to convey music. See the video for the "alsosprach" and try out the program for yourself for an example of what these programs entail.
