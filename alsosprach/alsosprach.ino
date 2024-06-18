@@ -1,7 +1,37 @@
 //JONATHAN MADE THIS ON 8-19-2023!!!!!!!!!!
 //Order on breadboard should look as so:
 //Red -> Green -> Blue.
-//Resistors used were 330 ohmz.
+//Resistors used were 330 ohms.
+
+/*
+  EPILEPSY WARNING: THIS PROGRAM CONTAINS FLASHING LIGHTS
+  NEAR THE END. 
+
+  This program is the first 'light-show' I created 
+  using the Arduino. 
+  The program blinks a small LED configuration 
+  connected by breadboard to the tune of the beginning 
+  of 2001: A Space Odyssey, also known as the 'Sunrise' 
+  movement from the tone poem Also Sprach Zarathustra 
+  by Richard Strauss.
+
+  In order to perfectly time the program to the music, 
+  this youtube video should be used:
+  https://www.youtube.com/watch?v=j79XrCDogp0
+  The part used in the lightshow begins at roughly 17 
+  seconds (an online audio editing software such as
+  audiomass could be used to gain a more exact starting 
+  position). 
+  The left-most LED on the Arduino will blink three 
+  times at the beginning of the program, and upon the 
+  third blink, the user should begin the music.
+
+  See the associated image and video demonstration in 
+  the alsosprach Github folder to see the breadboard
+  configuration and the light-show in action.
+  
+
+*/
 
 
 #define RED_LED 10
@@ -10,12 +40,19 @@
 
 
 void setup() {
-  // put your setup code here, to run once:
   pinMode(RED_LED, OUTPUT);
   pinMode(GREEN_LED, OUTPUT);
   pinMode(BLUE_LED, OUTPUT);
 }
-//start the file on the 3 one of the red LED. Should match up perfectly.
+
+/*
+  This program was created through the use of audio editing software. By 
+  planning each note/point in the music that I wanted to represent on the
+  LEDs, I used the audio software to find the exact number of milliseconds
+  between that point in the music, and the point that had been represented
+  in the program immediately prior.
+*/
+//Start the audio on the third blink of the red LED. Should match up perfectly.
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(RED_LED, HIGH);
@@ -26,6 +63,7 @@ void loop() {
   delay(1000);
   digitalWrite(RED_LED, LOW);
   delay(1000);
+
   digitalWrite(RED_LED, HIGH);
   delay(2500);
   digitalWrite(RED_LED, LOW);
@@ -217,7 +255,12 @@ void loop() {
   digitalWrite(RED_LED, HIGH);
   digitalWrite(BLUE_LED, HIGH);
   delay(8188);
-  for(int i = 1; i<62;i++){//this flickers it for 4.340 seconds, the amount of the time the music temporarily decrescendos
+
+  /*
+    For Epilepsy: Replace the entirety of the for loop below with this line:
+    delay(4340);
+  */
+  for(int i = 0; i<62;i++){//this flickers it for 4.340 seconds, the amount of the time the music temporarily decrescendos
     digitalWrite(BLUE_LED, LOW);
     delay(15);
     digitalWrite(RED_LED, LOW);
@@ -227,9 +270,10 @@ void loop() {
     digitalWrite(RED_LED, HIGH);
     delay(20);
   }
+  
   delay(1944);
   digitalWrite(BLUE_LED, LOW);
-  delay(3752);
+  delay(3752);//the organ solo.
   digitalWrite(RED_LED, LOW);
   digitalWrite(GREEN_LED, LOW);
   delay(30000);
