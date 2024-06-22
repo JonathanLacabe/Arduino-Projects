@@ -1,0 +1,1 @@
+These are simple button games that were created to amuse myself, of differing complexity. See the 'binary' project for a good example.

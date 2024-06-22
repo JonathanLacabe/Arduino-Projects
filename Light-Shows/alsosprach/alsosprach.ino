@@ -34,7 +34,7 @@
 */
 
 
-#define RED_LED 10
+#define RED_LED 11
 #define GREEN_LED 12
 #define BLUE_LED 13
 
