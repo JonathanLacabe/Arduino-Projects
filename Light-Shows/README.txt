@@ -10,7 +10,7 @@ Strings: Blue.
 Percussion: Every. (Timpani is Red, Glockenspiel is yellow/pink, gong and cymbals are white, with the rest of the bunch being individual as well.)
 Keyboards (organ, piano, celesta): Pink, Purple.
 
-The different instruments of each section are represented as well through different shades of the colors that their section has been designated, oftentime with the higher pitched instruments (like the piccolo) having lighter colors and the lower pitched instruments (like the tuba) being darker. 
+The different instruments of each section are represented as well through different shades of the colors that their section has been designated, oftentime with the higher pitched instruments (like the piccolo) having lighter colors and the lower pitched instruments (like the tuba) being darker. The string section allow follows this pattern, with the shades of blue being darker as afforded by the pitch of each instrument, darkening in the same way the instruments descend in a score.
 
 In light shows that feature solo instruments, some sort of accommodation should also be made, such as a unique shade of the section color and some separation from the other instruments on the breadboard score. 
 

@@ -1,4 +1,10 @@
-//JONATHAN MADE THIS ON 8-19-2023!!!!!!!!!!
+//JONATHAN MADE THIS ON 8-19-2023!
+
+/*
+==TECHNICAL INFORMATION==
+-Three 330 ohm resistors.
+- 
+*/
 //Order on breadboard should look as so:
 //Red -> Green -> Blue.
 //Resistors used were 330 ohms.
